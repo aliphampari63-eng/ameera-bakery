@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ameera Bakery - Bengkulu</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<!-- Tailwind config -->
+<script src="tailwind.js"></script>
+
+<!-- Custom styles -->
+<link rel="stylesheet" href="all.css">
+</head>
+
+<body class="antialiased text-on-background min-h-screen flex flex-col relative" >
+
+    
+ 
+<!-- ============ HEADER / NAV ============ -->
+<header class="pt-4 px-4 md:px-12 sticky top-0 z-50">
+  <nav class="shadow-md docked full-width top-4 rounded-full max-w-[95%] mx-auto h-[80px] flex justify-between items-center px-8 md:px-12 w-full bg-secondary border-2 border-white/20" >
+
+    <!-- Nav links -->
+    <ul class="hidden md:flex items-center h-full gap-6" >
+      <li class="h-full flex items-center relative">
+        <a href="#" class="font-nav-link text-nav-link uppercase text-white font-bold h-full flex items-center hover:opacity-80 transition-opacity duration-200">
+          ABOUT 
+        </a>
+      </li>
+      <li><a href="#menu" class="font-nav-link text-nav-link uppercase text-white hover:opacity-80 transition-opacity duration-200">MENU</a></li>
+      <li><a href="#service" class="font-nav-link text-nav-link uppercase text-white hover:opacity-80 transition-opacity duration-200">SERVICE</a></li>
+      <li><a href="#contact" class="font-nav-link text-nav-link uppercase text-white hover:opacity-80 transition-opacity duration-200">CONTACT</a></li>
+    </ul>
+
+    <!-- Mobile menu button -->
+    <button id="mobileMenuBtn" class="md:hidden text-white" aria-label="Buka menu">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    <!-- Brand -->
+    <div class="flex items-center gap-6">
+      <a href="#" class="font-headline-sm text-headline-sm text-white font-bold flex items-center gap-2">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8gdPgSmsJ6RX2bzzJWt1PIpm80N_MFFdqXXRnaXylGAvWJK2z6TgLb1O9RHf7HUAibyzqt0c1MFT0hBj8HyF2rmBu07bpuh1cj5nzvl_Bkajt5wOqpu6U7C83t95dTUF_OFiBbmgjeR_enRq2Ahl4YT6evZVvcE-MCNY419v0NjESxHHpCwEfZuNO8CNVuoQHNRWZV9vOw5pIC_5l008ZZA-lbb2m7EEUgtIzO_WqTkrUVMWfTogYFSk7AV6JgFxp0Q" alt="Ameera Bakery Logo" class="h-12 w-auto object-contain">
+        Ameera bakery
+      </a>
+      <div class="hidden lg:flex gap-2 text-white items-center">
+        <span class="material-symbols-outlined text-3xl" data-weight="fill">verified</span>
+        <span class="material-symbols-outlined text-3xl" data-weight="fill">workspace_premium</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile dropdown menu -->
+  <div id="mobileMenu" class="hidden md:hidden max-w-[95%] mx-auto mt-2 bg-secondary rounded-3xl shadow-md overflow-hidden">
+    <ul class="flex flex-col text-center py-4">
+      <li><a href="#" class="block py-3 font-nav-link text-nav-link uppercase text-white">ABOUT</a></li>
+      <li><a href="#menu" class="block py-3 font-nav-link text-nav-link uppercase text-white">MENU</a></li>
+      <li><a href="#service" class="block py-3 font-nav-link text-nav-link uppercase text-white">SERVICE</a></li>
+      <li><a href="#contact" class="block py-3 font-nav-link text-nav-link uppercase text-white">CONTACT</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ MAIN ============ -->
+<main class="flex-grow">
+
+  <!-- Hero -->
+  <section class="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[600px] items-stretch mt-4" >
+    <div class="space-y-6 flex flex-col justify-center px-4 md:px-16 py-12 md:py-20">
+      <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#1e1e1e]">
+        Ameera Bekery <div>Bengkulu</div>
+      </h1>
+      <p class="font-body-lg text-body-lg text-[#4a4a4a] max-w-lg">
+        Siap-Siap Masuk Ke Dunia Yang Penuh Warna, Manis, Dan Bikin Nagih Dari Gigitan Pertama Sampai Akhir, Rasanya Bikin Susah Berhenti.
+      </p>
+    </div>
+    <div class="relative w-full h-full min-h-[400px] md:min-h-full">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdyCOtrv0MNpy2d9KJLH33vGpgfTRr92pL7xpoX5_WGcRDosagKM6t2qpkn1gQBhLPj9uDH-1J4sNOqtgZTmvncvl9Yes9zArXRSamFjxNdKXC2Wv9cGdVHGnsqeDkZ6Z9DubVFsTRELHY3GbOapVCF9XWTDDEA0jriSe3IkfaTBajt3i9eDUyvfhzq6RbC4EKotDUehvQD0h7Qb-waRxWZLD9pS0-WBqg1ITgd6kV-ekXmSsgcuSaWJ2tYDMBykJPtfngPgyJAuGUSA" alt="Roti dan pastry artisan Indonesia" class="w-full h-full object-cover rounded-[40px]">
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="py-3 overflow-hidden border-t border-b border-white/10 bg-primary">
+    <div class="animate-marquee whitespace-nowrap flex items-center gap-8">
+      <div class="flex items-center gap-8 marquee-group">
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">ROTI ARTISAN</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">KUALITAS TERBAIK</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">FRESH SETIAP HARI</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">RESEP TRADISIONAL</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">SEJAK 2009</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+      </div>
+      <div class="flex items-center gap-8 marquee-group" aria-hidden="true">
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">Ameera Bekery Bengkulu</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">KUALITAS TERBAIK</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">FRESH SETIAP HARI</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">RESEP TRADISIONAL</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+        <span class="text-white font-bold tracking-widest uppercase text-[14px]">SEJAK 2009</span>
+        <span class="material-symbols-outlined text-[#f27121] text-[18px]" data-weight="fill">star</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Kategori produk -->
+  <section id="menu" class="max-w-6xl mx-auto px-4 md:px-12 py-12 mt-8">
+    <div class="flex flex-wrap gap-x-8 gap-y-4 justify-center" id="categoryFilters">
+      <button data-cat="all" class="cat-btn active px-6 py-2 rounded-full bg-primary text-white font-label-md text-label-md uppercase tracking-wider shadow-sm transition-transform active:scale-95">ALL</button>
+      <button data-cat="cake" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">CAKE</button>
+      <button data-cat="cookies" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">COOKIES &amp; SNACK</button>
+      <button data-cat="dessert" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">DESSERT</button>
+      <button data-cat="donat" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">DONAT</button>
+      <button data-cat="kuebasah" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">KUE BASAH</button>
+      <button data-cat="kuetart" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">KUE TART</button>
+      <button data-cat="oleholeh" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">OLEH-OLEH</button>
+      <button data-cat="rotiacara" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">ROTI ACARA</button>
+      <button data-cat="rotireguler" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">ROTI REGULER</button>
+      <button data-cat="rotispesial" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">ROTI SPESIAL</button>
+      <button data-cat="rotitawar" class="cat-btn px-4 py-2 rounded-full bg-transparent text-[#6b6b6b] font-label-md text-label-md uppercase tracking-wider hover:text-primary transition-colors active:scale-95">ROTI TAWAR</button>
+    </div>
+  </section>
+
+  <!-- Grid produk -->
+  <section id="service" class="max-w-7xl mx-auto px-4 md:px-12 pb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="productGrid">
+
+      <div class="product-card bg-transparent rounded-[40px] overflow-hidden shadow-none hover:-translate-y-1 transition-transform duration-300 relative aspect-[3/4]" data-cat="cookies">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuApDUEPNBHCn6i07ySBjuxofI79601ptjvI67cpfKgCgsfJXxYYjAixv1OTryseymiar9dlTjtPUKAhP3bJqh8SiWQUN9gJLSGCevhjbHYq6KfLvlQ9h3GYF0j5FqufEMs_Xd6_yim6l-2ho3jcjvdoEs5sH07LsErqv4ZOwEYEE4Ox7iZso8cECZ_XTXl3hLuoILC_WFDXTeFnNDzGnSf6gRSMjCTaunmiHVB6HH__Z8ODqDAZAfS1wtKlLR1kLJ0pGHnf23-nxnKLzA" alt="Mede cookies" class="w-full h-full object-cover rounded-[40px]">
+        <div class="absolute bottom-4 left-4 right-4 p-4 text-center bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl">
+          <h3 class="font-headline-sm text-[20px] text-black font-semibold tracking-wide">Mede cookies</h3>
+        </div>
+      </div>
+
+      <div class="product-card bg-transparent rounded-[40px] overflow-hidden shadow-none hover:-translate-y-1 transition-transform duration-300 relative aspect-[3/4]" data-cat="kuebasah">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAmbVAxEwDW25c5t5Wz8ZwXg6Pq0iUUwO5DFptfRQfwFfpmk6E9F5wOV2sERZyvSU6egHgboM8vdQMZLKEnYttcm-7e8po9_3K87UfIpUbV8DLZLdOCiL8kM6IHkkYME5LrKZ5Y_8ar04_8RWAjRmcKH7bLOXAlvs5fWZbQULCCo6qC0HBaGfZEGjuQbNjXRm8pbe2Qzm7o0W5JIDZ8vcM6ZpU1_9Vb0-uqh0WAhlu6W9VPrMo_N4KQ1mVOzZqSq_9QelhPx3WDX0qVA" alt="Lapis Kanji" class="w-full h-full object-cover rounded-[40px]">
+        <div class="absolute bottom-4 left-4 right-4 p-4 text-center bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl">
+          <h3 class="font-headline-sm text-[20px] text-black font-semibold tracking-wide">Cookies chocolate</h3>
+        </div>
+      </div>
+
+      <div class="product-card bg-transparent rounded-[40px] overflow-hidden shadow-none hover:-translate-y-1 transition-transform duration-300 relative aspect-[3/4]" data-cat="cookies">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAECgmFJdMDLvQ0QfACgvkDOoiKmfAXWYT_xvYJaCaFC-ZloXlAZ0nzwRHIXJTQ8glN_5Nr4ATu3JO9C9kMh_hklYvxnuXHK2X48bsKq8gmkkpAm8xK7N0kAyBhoY8QCzdFn4yZpqj5z1M2Hkj4oXunNS-oMZQEeXeCPUyg7gZFqc-gE8k2x-s5V81Yapgy0ye9B5ZZ2kgkKpEhz2bkui2jWoLGreoCJ68Zqlfld9D7FiKZjx-IRJ7oWR5LTYnfjhTGaUmfMQXD8fWu8g" alt="Kue Merah" class="w-full h-full object-cover rounded-[40px]">
+        <div class="absolute bottom-4 left-4 right-4 p-4 text-center bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl">
+          <h3 class="font-headline-sm text-[20px] text-black font-semibold tracking-wide">Corn flake</h3>
+        </div>
+      </div>
+
+      <div class="product-card bg-transparent rounded-[40px] overflow-hidden shadow-none hover:-translate-y-1 transition-transform duration-300 relative aspect-[3/4]" data-cat="rotispesial">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuANyqFqedkCWIn3Of_WNvUYZUrvrPsIBfoSzNz93Ho4Fu8iLp9BVthQVxh6bYJmgixeQPvY9w83uByTezZ77ZHJAQ2CEuhiT31-9J-GsoDjEfJ2aRd39u-mMdEX0-ykLxES0hNlLlNhOVC081qsOhIbj7HnBlGunqVIc0MkNxOEjarQ5xtvmCEQMRoNNFWCot3XZ0ZtzWdGGCy712MSWrqyvGvNqGDrGRNScdenwLn-ZitNoWkR5PC2LUg5vpX1OeGnCBN3Gsd6zBzVsw" alt="Arem-Arem" class="w-full h-full object-cover rounded-[40px]">
+        <div class="absolute bottom-4 left-4 right-4 p-4 text-center bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl">
+          <h3 class="font-headline-sm text-[20px] text-black font-semibold tracking-wide">Kue Special</h3>
+        </div>
+      </div>
+
+      <div class="product-card bg-transparent rounded-[40px] overflow-hidden shadow-none hover:-translate-y-1 transition-transform duration-300 relative aspect-[3/4]" data-cat="kuebasah">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHqeJnoVebR3YIyMNsI6J2QVmBHYtFI2aWD6zJSybkku3P77XLBKmZhhxcdmJ_L1UyN88glnL601_uTGhV6yGyoWpU42P4qg_7k4NWzxhvi1zH1XLz0ImWIP_L2L5FKpV-6x3tRN3xdWWx1SSxNZTqvrmBB8d0uzxX0dZacLTPuaTQxCXsJf-azZxPiR35VzJpMw-PElyBFM0k7sVc1rqZO8ygM0_XX39yYysLt67-84x8yHniz1pZl_gkYQkbqEaIKyVnwlu_UPzAjQ" alt="Lemper" class="w-full h-full object-cover rounded-[40px]">
+        <div class="absolute bottom-4 left-4 right-4 p-4 text-center bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl">
+          <h3 class="font-headline-sm text-[20px] text-black font-semibold tracking-wide">Kue biru putih</h3>
+        </div>
+      </div>
+
+      <div class="product-card bg-transparent rounded-[40px] overflow-hidden shadow-none hover:-translate-y-1 transition-transform duration-300 relative aspect-[3/4]" data-cat="rotitawar">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiQ-DwbxuhlUjlYojcsekchFS-F-dfV5YExWpsDNzrxtaN5aqQQk8gEeq7Jr14KVBiT5cRm2ArnzYdnvPlkT-mWtfkPx737qJLuIOu1otpbeoco7F7Ip4fxYfE_YTfT2IwNVRVFpQ3nvDQQcCvqDzEq7Hh1J6TH2cDZCIqcTffi3cWx3n-Xay29oCbeORqUUI3jH1XvSL0DQVhEugAhHAVopl6xwyWztcg9Dl7CtgqanBXj3KtJ4cvXNHAkG005xmg4nid2uEC94tWOw" alt="Talam Ubi" class="w-full h-full object-cover rounded-[40px]">
+        <div class="absolute bottom-4 left-4 right-4 p-4 text-center bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl">
+          <h3 class="font-headline-sm text-[20px] text-black font-semibold tracking-wide">Roti Tiga Rasa</h3>
+        </div>
+      </div>
+
+    </div>
+    <p id="emptyState" class="hidden text-center text-[#6b6b6b] font-body-md text-body-md mt-8">Belum ada produk di kategori ini.</p>
+  </section>
+
+</main>
+
+<!-- ============ SOCIAL / FOOTER ============ -->
+<section class="max-w-7xl mx-auto px-4 md:px-12 py-16 md:py-24">
+  <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-1 bg-on-surface rounded-full"></div>
+      <h2 class="font-headline-md text-headline-md text-on-surface">Follow Our Social Media</h2>
+    </div>
+    <a href="https://www.instagram.com/ameerabakery_id" class="flex items-center gap-2 px-6 py-2 border border-on-surface rounded-full font-label-md text-label-md text-on-surface hover:bg-on-surface hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-[20px]">photo_camera</span> @ameerabekery.id
+    </a>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+    <div class="relative aspect-[9/16] rounded-2xl overflow-hidden group cursor-pointer">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3pi_bhkWe4uuD2MI1JeDIlzvv7LK9XPRg3WUXXFVhJ-bqRYIW7Y6y_H07Jjr1J-Wdsz9Beyar8Efbn4AkqDjXtDORVy-_fMA0HrSVmyUz3JB9CgdUSm2rnEkYIFeAZOacvsZc9MiDp0Z0ZnzzI6MMSC5J7cTRl2O5XdU3rUX3t5mrfhVqr9KfGskuPvGQ5JgaIWHBffqk2DPeguuRfcKlmQxwaHYB-muiXya5_tqLENv18T150Jo2cC-aiB4ScC07FGvzgVsHavJ_zA" alt="Postingan sosial media 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+      <div class="absolute inset-0 flex items-center justify-center bg-black/10">
+        <span class="material-symbols-outlined text-white text-6xl opacity-90" data-weight="fill">play_circle</span>
+      </div>
+    </div>
+    <div class="relative aspect-[9/16] rounded-2xl overflow-hidden group cursor-pointer">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcgMP3Uo4nd8bv7g-qeCD3zCo8SXaGAatA8104sP0ue2VMpPwpdITTsWh40nbKo72nakP_PiUE8RCxBy3tVFB1zmz8hZM50OEPFpZy5usd11wOVtDysp9JeeFLtfrrZkJNz6w3zwSuVBBmq8VergtkFAxCSbj7RRo1TFEFRlB676Zznr29h33kz0A5y3qslL24pMwbGmEQr5QAX5t8zm0PmnFpPLqBIys-ZQMJlB1Bz1xj2hzIhLjgzp6RFgytVn9raackRjmcVHYwbg" alt="Postingan sosial media 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+      <div class="absolute top-4 right-4">
+        <span class="material-symbols-outlined text-white text-2xl drop-shadow-md">filter_none</span>
+      </div>
+    </div>
+    <div class="relative aspect-[9/16] rounded-2xl overflow-hidden group cursor-pointer">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmgaWUbL43ZmN2kL9e2piGljJl7Srz3Lhr5bOvdYdKE2DwdKhkH7sdCFkLVjSHcO5NJ3dXJ4Z-v1h1Cgulb0yB2VUKg0KWjcVDwdNkK7ClnxCX7mV1hYJcLI3kNcu9YueGTdQUyqeii3NhORUI0gy04Y79wcyD0dyMk2ept1Eg-4oxpGyA8gOkpn7zKQbFzQZFl8bTIFGYRYYZ68EftQfHBPqn2xRZb2rnH0YyWv13laHvmrnBgZuizNFsQZCWuNVdcMnOT5FJeVp7ag" alt="Postingan sosial media 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+      <div class="absolute inset-0 flex items-center justify-center bg-black/10">
+        <span class="material-symbols-outlined text-white text-6xl opacity-90" data-weight="fill">play_circle</span>
+      </div>
+    </div>
+    <div class="relative aspect-[9/16] rounded-2xl overflow-hidden group cursor-pointer">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfJIBmBvo7TA9enmUxAZLEOPDvrCaRuWpjI2h-3UPwvUI2BT3w9yxepp3qkyGsmcD-n7_1j1vmNKq761P3Lha1ywE4TKGzNpmSLYY4WlhgUnFRfTCJchyP6_b4AwgScBOzVzFTQ_HkCmba2l8mMoL9zrL_c6r-quhochM_-bxdL6EgWYa_qojQ4ikNuNlo6j2G6MRHEKdZJob2q40mz6WRYmhcFeK3GnbIpWIskaQjcQVSwZ7rAx2kI17TzhL0CkS6XPOmUujlKCUSaQ" alt="Postingan sosial media 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+      <div class="absolute top-4 right-4">
+        <span class="material-symbols-outlined text-white text-2xl drop-shadow-md">filter_none</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <a href="https://www.instagram.com/ameerabakery_id?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==" class="flex items-center gap-3 bg-[#A32323] text-white px-12 py-4 rounded-full font-nav-link text-nav-link uppercase tracking-widest hover:opacity-90 transition-opacity shadow-lg">
+      <span class="material-symbols-outlined">photo_camera</span> FOLLOW ON INSTAGRAM
+    </a>
+  </div>
+</section>
+
+<footer id="contact" class="shadow-[0_-10px_40px_rgba(0,0,0,0.03)] rounded-[40px] mb-8 mx-4 md:mx-12 overflow-hidden bg-primary-container text-white">
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-8 px-6 md:px-12 py-16 max-w-7xl mx-auto">
+
+    <div class="md:col-span-2 space-y-6 pr-0 md:pr-8">
+      <div class="flex items-center gap-2">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUif818CyxUjJTI8vhtjMFUyBYu4gfWmNCV-JQFj9Eqo93ft1-GsDjwRP6jm4DVHHJWGpDmyLAE-znKUOVJsoJrsKVYWRXZKfp6yBheIgqk37o15iRkxgEccSdCTXoo7pEpnCNwtUIwDYUuqeh83R16B6eELbqakMftDd0cPh1d4XxRHLHxdgqW553Tq7eqjrdF2J7b7fT5I9ZMQCf-vbaAUHU4JU5xOg3JVXnapQzXddF1CgsF4RJuLSGVRpBmj3WsA" alt="Ameera Bakery Logo" class="h-12 w-auto object-contain logo-invert">
+        <span class="font-headline-sm text-headline-sm font-bold text-white">Ameera Bekery Bengkulu</span>
+      </div>
+      <p class="font-body-md text-body-md max-w-sm leading-relaxed text-white">
+        Amera Bakery menghadirkan roti, kue, dan pastry segar dengan rasa autentik dari bahan pilihan.<br>
+        Setiap gigitan dibuat untuk memberikan kehangatan dan momen manis di setiap kesempatan.
+      </p>
+      <div class="flex gap-4 pt-2">
+        <a href="#" class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center hover:text-primary transition-colors text-white"><span class="material-symbols-outlined text-[24px]">share</span></a>
+        <a href="#" class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center hover:text-primary transition-colors text-white"><span class="material-symbols-outlined text-[24px]">play_arrow</span></a>
+        <a href="#" class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center hover:text-primary transition-colors text-white"><span class="material-symbols-outlined text-[24px]">photo_camera</span></a>
+        <a href="#" class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center hover:text-primary transition-colors text-white"><span class="material-symbols-outlined text-[24px]">alternate_email</span></a>
+      </div>
+    </div>
+
+    <div class="space-y-6">
+      <h4 class="font-label-md text-[16px] font-bold text-white">Product</h4>
+      <ul class="space-y-4">
+        <li><a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">Our Service</a></li>
+        <li><a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">GoFood</a></li>
+        <li><a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">GrabFood</a></li>
+        <li><a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">ShopeeFood</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-6">
+      <h4 class="font-label-md text-[16px] font-bold text-white">Information</h4>
+      <ul class="space-y-4">
+        <li><a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">Tentang Kami</a></li>
+        <li><a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">Sponsorship</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-6">
+      <h4 class="font-label-md text-[16px] font-bold text-white">Company</h4>
+      <ul class="space-y-4">
+        <li><a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">Tentang Kami</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-6">
+      <h4 class="font-label-md text-[16px] font-bold text-white">Customer Care</h4>
+      <ul class="space-y-4">
+        <li class="flex items-center gap-3 font-body-md text-[14px] text-white">
+          <span class="material-symbols-outlined text-secondary text-[20px]">chat</span>0851-9941-7887
+        </li>
+        <li class="flex items-center gap-3 font-body-md text-[14px] text-white">
+          <span class="material-symbols-outlined text-primary text-[20px] text-white">photo_camera</span>@ameerabakery_id
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-100 px-6 md:px-12 py-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-body-md text-[14px] text-white">© 2026 Ameera Bakery | All Rights Reserved</p>
+    <div class="flex gap-6">
+      <a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">Privacy Policy</a>
+      <a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">Term of Service</a>
+      <a href="#" class="font-body-md text-[14px] hover:text-primary transition-colors text-white">Cookie Settings</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Action Button -->
+<div class="fixed bottom-floating-trigger-offset right-floating-trigger-offset z-50 flex items-center gap-3">
+  <button id="contactFab" class="bg-primary text-white px-6 py-3 rounded-full font-label-md text-label-md shadow-lg hover:-translate-y-1 transition-transform">
+    Kontak Kami
+  </button>
+</div>
+
+<script src="toggle.js"></script>
+</body>
+</html>

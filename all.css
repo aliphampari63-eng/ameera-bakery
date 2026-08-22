@@ -1,0 +1,42 @@
+body {
+  background-color: #FFFFFF;
+}
+
+/* ===== Marquee animation ===== */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+/* ===== Logo invert (footer) ===== */
+.logo-invert {
+  filter: brightness(0) invert(1);
+}
+
+/* ===== Category filter active state ===== */
+.cat-btn.active {
+  background-color: #9f4200;
+  color: #ffffff;
+}
+
+/* ===== Simple fade-in for filtered product grid ===== */
+.product-card {
+  transition: opacity 0.25s ease, transform 0.3s ease;
+}
+
+.product-card.is-hidden {
+  display: none;
+}
+
